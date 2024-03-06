@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BombermanTest.unity
     guid: 167536d57f4d1d1489bf31e1590e96bc
+<<<<<<< HEAD
+=======
+  - enabled: 1
+    path: Assets/Scenes/BombermanTest2.unity
+    guid: c942179fd0e3b8a42b78d8448f56c996
+>>>>>>> 2a2a7619e7ce2e4f747d9a2f559b4c90a25db518
   m_configObjects: {}

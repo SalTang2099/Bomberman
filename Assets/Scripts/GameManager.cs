@@ -36,7 +36,8 @@ public class GameManager : MonoBehaviour
     private void NewRound()
     {
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        SceneManager.LoadScene("start");
+        SceneManager.LoadScene("start", LoadSceneMode.Single);
+        Destroy(gameObject);
     }
 
 }

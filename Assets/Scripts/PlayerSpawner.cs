@@ -21,6 +21,7 @@ public class PlayerSpawner : MonoBehaviour
 
     public void MovePlayersToSpawnPoints()
     {
+        Debug.Log("Moving players starts");
         BoundsInt bounds = indestructibleTilemap.cellBounds;
 
         // Create a list to store valid spawn positions
@@ -49,12 +50,17 @@ public class PlayerSpawner : MonoBehaviour
         int playerCount = Mathf.Min(playerPrefabs.Length, validSpawnPositions.Count);
         for (int i = 0; i < playerCount; i++)
         {
+            
             Vector3Int randomPosition = validSpawnPositions[i];
+            
             Vector3 spawnPosition = indestructibleTilemap.GetCellCenterWorld(randomPosition);
+
+            Debug.Log("Spawn Position: " + spawnPosition);
 
             // Move the player to the random position
             playerPrefabs[i].transform.position = spawnPosition;
         }
+        Debug.Log("Moving players ends");
     }
 
     // Helper function to shuffle a list

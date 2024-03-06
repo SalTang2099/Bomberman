@@ -191,8 +191,13 @@ MonoBehaviour:
   shadowedFloor: {fileID: 11400000, guid: d1cbdcffa416fd6468e0f7f77133c934, type: 2}
   wall: {fileID: 11400000, guid: 2ad2254e3287b0b43b3c876a5f0348fd, type: 2}
   brick: {fileID: 11400000, guid: bd0a10fa6446e4342b4aa734f0340aa5, type: 2}
-  inputMap: 10 12, 3333333333, 3111111113, 3100000013, 3100000013, 3100000013, 3100000013,
-    3100000013, 3100000013, 3100000013, 3100000013, 3111111113, 3333333333
+  inputMap: 33333, 31113, 31013, 31013, 31013, 31113, 33333, 33333
+  maps:
+  - 33333,31113,31013, 31113,33333
+  - '3333333333333, 3111111111113, 3100220202013, 3110131011013, 3110111111013, 3100200202013,
+    3110111111013, 3100220202013, 3110131011013, 3333333333333 '
+  - '1111111111113 1333333333333 1311111111111 1333333333333 1111111111113 1333333333333
+    1311111111111 1333333333333 1111111111113 3333333333333 '
 --- !u!114 &209817205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200,7 +205,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209817201}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f56e847c4df86841b7e77b3ca1001fc, type: 3}
   m_Name: 
@@ -285,7 +290,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 6.85, y: 4.63, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -993,6 +998,10 @@ PrefabInstance:
     - target: {fileID: 5879614341149993150, guid: 6bdbecbdf34cd67488978d9895d00820, type: 3}
       propertyPath: m_Name
       value: Player 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879614341149993150, guid: 6bdbecbdf34cd67488978d9895d00820, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6933967370136482323, guid: 6bdbecbdf34cd67488978d9895d00820, type: 3}
       propertyPath: idleSprite
@@ -3639,6 +3648,10 @@ PrefabInstance:
     - target: {fileID: 5879614341149993150, guid: 6bdbecbdf34cd67488978d9895d00820, type: 3}
       propertyPath: m_Name
       value: Player 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5879614341149993150, guid: 6bdbecbdf34cd67488978d9895d00820, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6933967370136482323, guid: 6bdbecbdf34cd67488978d9895d00820, type: 3}
       propertyPath: idleSprite

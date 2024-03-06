@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 209817202}
   - component: {fileID: 209817203}
   - component: {fileID: 209817204}
+  - component: {fileID: 209817205}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -186,12 +187,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   destructibleTilemap: {fileID: 1169247074}
   indestructibleTilemap: {fileID: 1594877517}
-  destructibleTiles:
-  - {fileID: 11400000, guid: bd0a10fa6446e4342b4aa734f0340aa5, type: 2}
-  indestructibleTiles:
-  - {fileID: 11400000, guid: 3aed46808c2f95b47b0f7115ef042fd8, type: 2}
-  - {fileID: 11400000, guid: d1cbdcffa416fd6468e0f7f77133c934, type: 2}
-  - {fileID: 11400000, guid: 2ad2254e3287b0b43b3c876a5f0348fd, type: 2}
+  floor: {fileID: 11400000, guid: 3aed46808c2f95b47b0f7115ef042fd8, type: 2}
+  shadowedFloor: {fileID: 11400000, guid: d1cbdcffa416fd6468e0f7f77133c934, type: 2}
+  wall: {fileID: 11400000, guid: 2ad2254e3287b0b43b3c876a5f0348fd, type: 2}
+  brick: {fileID: 11400000, guid: bd0a10fa6446e4342b4aa734f0340aa5, type: 2}
+  inputMap: 10 12, 3333333333, 3111111113, 3100000013, 3100000013, 3100000013, 3100000013,
+    3100000013, 3100000013, 3100000013, 3100000013, 3111111113, 3333333333
+--- !u!114 &209817205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209817201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f56e847c4df86841b7e77b3ca1001fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructibleTilemap: {fileID: 1169247074}
+  indestructibleTilemap: {fileID: 1594877517}
+  floor: {fileID: 11400000, guid: 3aed46808c2f95b47b0f7115ef042fd8, type: 2}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +261,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.28
+  orthographic size: 11.66
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

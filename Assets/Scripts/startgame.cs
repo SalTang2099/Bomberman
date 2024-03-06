@@ -7,6 +7,12 @@ public class startgame : MonoBehaviour
 {
     public void Playgame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("Bomberman");
     }
+
+    public void PlayAILevel()
+    {
+        SceneManager.LoadScene("BombermanTest");
+    }
+
 }

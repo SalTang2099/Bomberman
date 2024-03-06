@@ -7,6 +7,6 @@ public class startgame : MonoBehaviour
 {
     public void Playgame()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("BombermanTest");
     }
 }
